@@ -1,0 +1,94 @@
+{% extends "shell.html" %}
+{% block content %}
+<div id="pageContainer">
+    <div class="header"><h2>Planet Statistics</h2> </div>
+    <div class="wrapper">
+        <div class="colWrapper flexStart">
+            <h3>Planet Data</h3>
+            <p>This page lets you get a more detailed overview of the closest 20 planets in the local system. Positive values represent a surplus in materials and Negative values represent a desire for materials. The price data matches this accordingly, showing either a buy or sell price based on the planets current material usage.</p>
+        </div>
+        <div class="colWrapper flexStart">
+            <h3>View your next planet!</h3>
+            <p>Once your done looking at the information on the current planet, switch to the next using the button below and the data will be updated with the new planets current state. you can cycle through all 20 planets this way.</p>
+            <div class="buttonChange" id="planetChange">View Next Planet</div>
+        </div>
+    </div>
+    <div class="planetDataWrapper">
+        <div class="infoWrap">
+            <div class="dataTitle">NAME</div>
+            <div id="nameHolder" class="databox"></div>
+            <div class="relativeInfoHolder">
+                <div class="infoBox"> The name of the planet you are looking at.</div>
+            </div>
+        </div>
+        <div class="infoWrap">
+            <div class="dataTitle">HABITABILITY</div>
+            <div id="habitabilityHolder" class="databox"></div>
+            <div class="relativeInfoHolder">
+                <div class="infoBox"> The world's current Habitability, inhabitable worlds have smaller populations that exist on space habitats and moons.</div>
+            </div>
+        </div>
+        <div class="infoWrap">
+            <div class="dataTitle">CLIMATE</div>
+            <div id="climateHolder" class="databox"></div>
+            <div class="relativeInfoHolder">
+                <div class="infoBox"> The climate of the planet, which affects elements rarity and availability.</div>
+            </div>
+        </div>
+        <div class="infoWrap">
+            <div class="dataTitle">POPULATION</div>
+            <div id="populationHolder" class="databox"></div>
+            <div class="relativeInfoHolder">
+                <div class="infoBox"> The population of all sentient species on the planet.</div>
+            </div>
+        </div>
+        <div class="infoWrap">
+            <div class="dataTitle">ECONOMIC STATUS</div>
+            <div id="economicHolder" class="databox"></div>
+            <div class="relativeInfoHolder">
+                <div class="infoBox"> The current state of the planets production, booms and crashes in production will increase how likely it is for production to increase or decrease.</div>
+            </div>
+        </div>
+    </div>
+    <div class="colWrapper">
+        <div class="legend">
+            <p>LEGEND</p>
+            <p id="c1">Surplus Elements</p>
+            <p id="c2">Required Elements</p>
+            <p id="c3">Lowest Buy Price</p>
+            <p id="c4">Current Buy Price</p>
+            <p id="c8">Highest Buy Price</p>
+            <p id="c5">Lowest Sell Price</p>
+            <p id="c6">Current Sell Price</p>
+            <p id="c7">Highest Sell Price</p>
+        </div>
+        <div class="wrapper">
+            <div class="colWrapper">
+                <div id="gasBarChart" class="surplusTextChart"></div>
+                <div id="gasPriceBuyChart" class="surplusTextChart"></div>
+            </div>
+            <div class="colWrapper">
+                <div id="liquidBarChart" class="surplusTextChart"></div>
+                <div id="liquidPriceBuyChart" class="surplusTextChart"></div>
+            </div>
+            <div class="colWrapper">
+                <div id="solidBarChart" class="surplusTextChart"></div>
+                <div id="solidPriceBuyChart" class="surplusTextChart"></div>
+            </div>
+        </div>
+    </div>
+    <div id="isMobile"></div>
+    <div id="isTablet"></div>
+    <div id="isLarge"></div>
+</div>
+{% endblock %}
+{% block additional_scripts %}
+    <script src="{{ url_for ('static', filename='lib/js/jquery.min.js')}}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/bootstrap.min.js')}}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/crossfilter.js')}}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/d3.js')}}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/dc.js')}}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/queue.js')}}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/keen.min.js')}}"></script>
+    <script src="{{ url_for ('static', filename='js/planets.js')}}"></script>
+{% endblock %}

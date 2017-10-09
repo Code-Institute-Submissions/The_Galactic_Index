@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF8">
+    <title>Galactic Index</title>
+    <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/keen-dashboards.css')}}">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/dc.css')}}">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/custom.css')}}">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400&amp;subset=latin-ext,vietnamese" rel="stylesheet">
+    <!-- Contains info on what weight fonts can have + languages -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<html>
+    <head>
+        <title>Two Page Flask App</title>
+    </head>
+    <body>
+
+    <div id="titleHolder">
+        <h1 id="title">The Galactic Index</h1>
+        <a class="links" href="{{ url_for('home') }}">Home</a>
+        <a class="links" href="{{ url_for('planets') }}">Planets</a>
+        <a class="links" href="{{ url_for('companies') }}">Companies</a>
+        <div id="titleText"> Region: 4234-123123-Omicron:Cluster 8:U-C137 </div>
+
+    </div>
+
+    <div class="template">
+     {% block content %}
+     {% endblock %}
+    </div>
+    {% block additional_scripts %}
+    {% endblock %}
+    </body>
+</html>

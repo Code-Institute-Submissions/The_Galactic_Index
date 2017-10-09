@@ -1,0 +1,295 @@
+html {font-family: "Source Sans Pro", Sans-Serif; font-size: 12px; font-weight: 200;}
+body {font-family: "Source Sans Pro", Sans-Serif; font-size: 12px; font-weight: 200; min-width:300px;/*background-color: rgb(176,255,133);*/}
+a, a:active, a:visited {text-decoration: none; color: white;} a:hover {text-decoration: none;}
+
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+h3 {
+	background-color: #cd5858;
+	border-radius: 10px;
+	padding: 5px 10px 5px 10px;
+	color: white;
+	font-size: 1em;
+}
+
+p {
+	padding: 10px;
+	font-size: 0.75em;
+}
+
+
+#isMobile {
+	display: block;
+}
+#isTablet {
+	display: none;
+}
+#isLarge {
+	display: none;
+}
+
+/*NAVIGATION---------------*/
+
+#titleHolder {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #cd5858;
+	color: white;
+}
+#title {
+	margin: 10px 0px 10px 0px;
+	font-size: 3em;
+}
+.links {
+	padding: 5px;
+	font-size: 2em;
+	transition: background-color 0.2s, color 0.2s, width 0.2s;
+	border: solid white 2px;
+	margin: 10px 10px 10px 10px;
+	border-radius: 10px;
+	text-align: center;
+	color:;
+	width: 90%;
+}
+.links:hover {
+	background-color: white;
+	color: #cd5858;
+	width: 40%;
+}
+.links:active {
+	background-color: #cd5858;
+	color: white;
+	width
+}
+#titleText {
+	text-align: center;
+	font-size: 1em;
+	word-wrap: break-word;
+	flex: 1;
+}
+/*PLANETS PAGE---------------*/
+
+.header {
+	width:100%;
+	margin: 30px;
+	padding: 10px;
+	font-size: 2.5em;
+	color: white;
+	background-color: #cd5858;
+}
+
+.template {
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	justify-content: center;
+}
+	
+#pageContainer {
+	width: 100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	/*background-color: rgb(210,28,28);*/
+}
+
+/*this rotates the text 45degrees from a right side anchor*/
+.surplusTextChart .x.axis text {
+	font-size: 1em;
+	font-size: 0.5em;
+    text-anchor: end !important;
+    transform: rotate(-45deg);
+}
+
+.wrapper { /*CHARTS*/
+	width:100%;
+	padding: 20px;
+	font-size: 1em;
+	margin: 10px 0px 10px 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: solid #cd5858 1px;
+/*	border-top: none;
+	border-bottom: none;*/
+}
+
+.colWrapper { /*CHARTS*/
+	margin: 10px 0px 10px 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: solid #cd5858 1px;
+	padding: 15px;
+	margin: 3px;
+	height: 100%;
+}
+.flexStart {
+	align-items: flex-start;
+}
+.colRowWrapper { /*CHARTS*/
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/*DATA WRAPPER FOR TOP OF PLANET/COMPANY PAGE*/
+.planetDataWrapper { /*CHARTS*/
+	width: 100%;
+	margin: 10px 0px 10px 0px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.infoWrap {
+	display: flex;
+	border: solid #cd5858 2px;
+	border-right: none;
+	border-left: none;
+	flex: 1;
+	transition: background-color 0.2s, color 0.2s;
+	flex-direction: column;
+	align-items: center;
+}
+
+.infoWrap:hover {
+	background-color: #cd5858;
+	color: white;
+}
+.dataTitle {
+	font-size: 1.3em;
+	text-align: center;
+	padding-left: 30px:
+	padding-right 30px;
+}
+.databox {
+	padding:10px;
+	font-size: 1.2em;
+}
+
+.relativeInfoHolder {
+	width: 100%;
+	position: relative;
+}
+
+.infoBox {
+	font-size: 1em;
+	position: absolute;
+	background-color: #cd5858;
+	padding: 10px;
+	width: 100%;
+	opacity: 0;
+	border: solid #cd5858 2px;
+	transition: opacity 0.2s, height 0.2s;
+	-webkit-transition: opacity 0.2s, height 0.2s;
+	-moz-transition: opacity 0.2s, height 0.2s;
+	visibility: hidden;
+	text-overflow: hidden;
+}
+.infoWrap:hover div {
+	text-overflow: visible;
+	visibility: visible;
+	opacity: 1;
+}
+
+.buttonChange {
+	font-size: 1em;
+	border: solid #cd5858 1px;
+	border-radius: 10px;
+	padding: 5px;
+	transition: background-color 0.2s, color 0.2s;
+}
+.buttonChange:hover {
+	background-color: #cd5858;
+	color: white;
+}
+.buttonChange:active {
+	background-color: white;
+	color: black;
+}
+.legend {display: flex; flex-direction: row}
+#c1 {background-color: #1fbbd7}
+#c2 {background-color: #db3030}
+#c3 {background-color: #e8e62c}
+#c4 {background-color: #de2eaa}
+#c5 {background-color: #1fd977}
+#c6 {background-color: #e79b24}
+#c7 {background-color: #9930db}
+#c8 {background-color: #91d526}
+
+@media only screen and (min-width: 768px) {
+	body {font-size: 18px;}
+	/*NAVIGATION---------------*/
+	#isMobile {
+		display: none;
+	}
+	#isTablet {
+		display: block;
+	}
+	#isLarge {
+		display: none;
+	}
+
+	#titleHolder {
+		flex-direction: row;
+		padding: 0px 10px 0px 10px;
+	}
+
+	#title {
+		flex: 3;
+	}
+
+	.links {
+		flex: 1;
+	}
+
+	#pageContainer {
+		width: 95%;
+	}
+	.wrapper {
+		flex-direction: column;
+	}
+	.colRowWrapper { /*CHARTS*/
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}		
+}
+
+@media only screen and (min-width: 1440px) {
+	body {font-size: 24px;}
+	#isMobile {
+		display: none;
+	}
+	#isTablet {
+		display: none;
+	}
+ 	#isLarge {
+ 		display: block;
+ 	}
+
+	#pageContainer {
+		width: 95%;
+	}
+	.wrapper {
+		flex-direction: row;
+		align-items: flex-start;
+	}
+	.colRowWrapper { /*CHARTS*/
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}	
+}

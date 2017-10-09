@@ -1,0 +1,59 @@
+{% extends "shell.html" %}
+{% block content %}
+<div id="pageContainer">
+    <div class="wrapper">
+        <div class="colWrapper flexStart">
+            <h3>Welcome Traveler</h3>
+            <p>Welcome to the Galactic index, the first place to look for information on local planetary trade of core elements! On the frontpage you can see basic overviews of the local system, be sure to find a climate that matches your species needs.</p>
+        </div>
+        <div class="colWrapper flexStart">
+            <h3>Recent News</h3>
+            <p>Surpreme Ruler of the Galaxy Brian of Zorkiglorp Beta VII has decreed wumple hats are Anti-Brian and sales have plummeted, the people of wumple are shocked! </p>
+        </div>
+    </div>
+    <div class="header"><h2>Planet Statistics - A basic overview of the 20 closest planets to your current location.</h2> </div>
+    <div class="wrapper">
+        <div class="surplusTextChart" id="populationBarChart"></div>
+        <div class="colWrapper">
+            <div id="populationPie"></div>
+            <h3>Habitability</h3>
+            <div id="climatePie"></div>
+            <h3>Climate</h3>
+        </div>
+    </div>
+    <div class="header"><h2>Company Statistics - A basic overview of the 20 nearest Mineral trading companies.</h2> </div>
+    <div class="wrapper">
+        <div class="surplusTextChart" id="companyBubbleChart"></div>
+        <div class="colWrapper">
+            <div id="companyRowChart"></div>
+            <h3>Stock Prices</h3>
+        </div>
+        <div class="colRowWrapper">
+            <div class="colWrapper">
+                <div id="numberOfSpaceports"></div>
+                <h3>Number of Spaceports</h3>
+            </div>
+            <div class="colWrapper">
+                <div id="numberOfSpaceships"></div>
+                <h3>Number of Spaceships</h3>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div id="isMobile"></div>
+<div id="isTablet"></div>
+<div id="isLarge"></div>
+
+{% endblock %}
+{% block additional_scripts %}
+    <script src="{{ url_for ('static', filename='lib/js/jquery.min.js')}}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/bootstrap.min.js')}}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/crossfilter.js')}}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/d3.js')}}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/dc.js')}}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/queue.js')}}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/keen.min.js')}}"></script>
+    <script src="{{ url_for ('static', filename='js/graph.js')}}"></script>
+{% endblock %}
+

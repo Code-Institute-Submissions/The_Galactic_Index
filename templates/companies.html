@@ -1,0 +1,95 @@
+{% extends "shell.html" %}
+{% block content %}
+<div id="pageContainer">
+    <div class="header">Company Statistics</div>
+    <div class="wrapper">
+        <div class="colWrapper flexStart">
+            <h3>Company Data</h3>
+            <p>The planets overview lets you get a more detailed overview of the closest 20 companies in the local system. You can view how much of an element a company has in transit and stored, as well as the average price they have paid for each.</p>
+        </div>
+        <div class="colWrapper flexStart">
+            <h3>View the next company!</h3>
+            <p>Once your done looking at the information on the current company, switch to the next using the button below and the data will be updated with the new companies current state. you can cycle through all 20 this way.</p>
+            <div class="buttonChange" id="companyChange">CHANGE COMPANY</div>
+        </div>
+    </div>
+    <div class="planetDataWrapper">
+        <div class="infoWrap">
+            <div class="dataTitle">NAME</div>
+            <div id="compNameHolder" class="databox"></div>
+            <div class="relativeInfoHolder">
+                <div class="infoBox"> Name of the current company.</div>
+            </div>
+        </div>
+        <div class="infoWrap">
+            <div class="dataTitle">AGE</div>
+            <div id="ageHolder" class="databox"></div>
+            <div class="relativeInfoHolder">
+                <div class="infoBox"> How Many Galactic cycles the company has existed.</div>
+            </div>
+        </div>
+        <div class="infoWrap">
+            <div class="dataTitle">MONEY</div>
+            <div id="moneyHolder" class="databox"></div>
+            <div class="relativeInfoHolder">
+                <div class="infoBox"> Current company money, after costs are taken from it's profit.</div>
+            </div>
+        </div>
+        <div class="infoWrap">
+            <div class="dataTitle">STOCK PRICE</div>
+            <div id="stockHolder" class="databox"></div>
+            <div class="relativeInfoHolder">
+                <div class="infoBox"> Current stock price of the company.</div>
+            </div>
+        </div>
+        <div class="infoWrap">
+            <div class="dataTitle">QUARTERLY PROFIT</div>
+            <div id="profitHolder" class="databox"></div>
+            <div class="relativeInfoHolder">
+                <div class="infoBox">Quarterly Profit is what the company has made in trades in the past 50 galactic cycles.</div>
+            </div>
+        </div>
+        <div class="infoWrap">
+            <div class="dataTitle">SIZE OF FLEET</div>
+            <div id="shipsHolder" class="databox"></div>
+            <div class="relativeInfoHolder">
+                <div class="infoBox"> How many transport ships the company has.</div>
+            </div>
+        </div>
+        <div class="infoWrap">
+            <div class="dataTitle">SPACEPORTS</div>
+            <div id="spaceportsHolder" class="databox"></div>
+            <div class="relativeInfoHolder">
+                <div class="infoBox"> How many spaceports does this company run, the more spaceports they have, the more transport ships they can use.</div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="colWrapper">
+            <div id="gasBarChart" class="surplusTextChart"></div>
+            <div id="gasPriceBarChart" class="surplusTextChart"></div>
+        </div>
+        <div class="colWrapper">
+            <div id="liquidBarChart" class="surplusTextChart"></div>
+            <div id="liquidPriceBarChart" class="surplusTextChart"></div>
+        </div>
+        <div class="colWrapper">
+            <div id="solidBarChart" class="surplusTextChart"></div>
+            <div id="solidPriceBarChart" class="surplusTextChart"></div>
+        </div>
+    </div>
+    <div id="isMobile"></div>
+    <div id="isTablet"></div>
+    <div id="isLarge"></div>
+</div>
+{% endblock %}
+{% block additional_scripts %}
+    <script src="{{ url_for ('static', filename='lib/js/jquery.min.js')}}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/bootstrap.min.js')}}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/crossfilter.js')}}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/d3.js')}}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/dc.js')}}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/queue.js')}}"></script>
+    <script src="{{ url_for ('static', filename='lib/js/keen.min.js')}}"></script>
+    <script src="{{ url_for ('static', filename='js/companies.js')}}"></script>
+{% endblock %}

@@ -75,6 +75,10 @@ p {
 }
 /*PLANETS PAGE---------------*/
 
+.removeChartHighlight {
+	pointer-events: none;
+}
+
 .header {
 	width:100%;
 	margin: 30px;
@@ -132,6 +136,11 @@ p {
 	margin: 3px;
 	height: 100%;
 }
+
+.fullWidth {
+	width: 100%;
+}
+
 .flexStart {
 	align-items: flex-start;
 }

@@ -2,12 +2,15 @@ from flask import Flask
 from flask import render_template
 from pymongo import MongoClient
 import json
+import os
 
 app = Flask(__name__)
 
-MONGODB_HOST = 'localhost'
-MONGODB_PORT = 27017
-DBS_NAME = 'Galactic_stream'
+# MONGODB_HOST = 'localhost'
+# MONGODB_PORT = 27017
+MONGO_URI = os.getenv("MONGO_URI", 'mongodb://localhost:27017')
+DBS_NAME = os.getenv('MONGO_DB_NAME', 'Galactic_stream')
+# DBS_NAME = 'Galactic_stream'
 PLANET_COLLECTION = 'planets'
 COMPANY_COLLECTION = 'companies'
 
@@ -53,7 +56,8 @@ def galactic_planets():
 
     # Open a connection to MongoDB using a with statement such that the
     # connection will be closed as soon as we exit the with statement
-    with MongoClient(MONGODB_HOST, MONGODB_PORT) as conn:
+    # The MONGO_URI connection is required when hosted using a remote mongo db.
+    with MongoClient(MONGO_URI) as conn:
         # Define which collection we wish to access
         planet_collection = conn[DBS_NAME][PLANET_COLLECTION]
         # Retrieve a result set only with the fields defined in FIELDS
@@ -86,7 +90,7 @@ def galactic_companies():
 
     # Open a connection to MongoDB using a with statement such that the
     # connection will be closed as soon as we exit the with statement
-    with MongoClient(MONGODB_HOST, MONGODB_PORT) as conn:
+    with MongoClient(MONGO_URI) as conn:
         # Define which collection we wish to access
         company_collection = conn[DBS_NAME][COMPANY_COLLECTION]
         # Retrieve a result set only with the fields defined in FIELDS

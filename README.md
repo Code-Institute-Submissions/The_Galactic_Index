@@ -23,10 +23,6 @@ The graphs will allow the users to view detailed info on both companies and plan
 ### Some the tech used includes:
 - [Bootstrap](http://getbootstrap.com/)
     - I use **Bootstrap** to include some useful layout functionality like tabs.
-- [npm](https://www.npmjs.com/)
-    - **npm** to help manage some of the dependencies in our application
-- [bower](https://bower.io/)
-    - **Bower** is used to manage the installation of our libraries and frameworks
 - [JQuery](https://jquery.com/)
   - **JQuery** is used for extra front-end functionality.
 - [D3](https://d3js.org/)

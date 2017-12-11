@@ -46,7 +46,7 @@ Then make sure you have downloaded and installed pycharm, there is a free commun
 This project uses Python version 2.7.14
 - [Python 2.7.14](https://www.python.org/downloads/)
 
-### Set up a virtaul environment
+### Set up a virtual environment
 
  - Open the project Root folder in Pycharm and in the menu and navigate to file > settings.
  - Then in the menu look for project:Galactic-index > ProjectInterpreter.

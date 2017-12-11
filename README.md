@@ -108,9 +108,9 @@ Then i could check in Mongo Management studio wether the data had been sucessful
 
 ### Modify routing.py
 
-AFter checking the data was sucessfully uploaded, the names in my .py files needed to be changed from my local database to the data stored on the server, by changing from MONGODB_HOST, PORT AND NAME to the MONGO_URI given by heroku in the settings tab.
+After checking the data was sucessfully uploaded, the names in my .py files needed to be changed from my local database to the data stored on the server, by changing from MONGODB_HOST, PORT AND NAME to the MONGO_URI given by heroku in the settings tab.
 
-After pushing the changes to heroku with:
+Then push the changes to heroku/git with:
 ```
 git push heroku master
 ```
@@ -118,5 +118,5 @@ The project is ready to be opened with
 ```
 heroku open
 ```
-or can be opened in the heroku dashboard.
+or can be opened through the heroku dashboard.
 

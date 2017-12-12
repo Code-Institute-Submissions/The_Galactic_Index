@@ -15,7 +15,7 @@ This site will allow people to view data on individual planets, their names, cli
 
 ### How does it work?
 
-The front end of the site will make extensive use of D3, DC and crossfilter for visualisation of the data, the backend will run on a Flask framwork. it will alsio use a snapshot of data from a MongoDB database.
+The front end of the site will make extensive use of D3, DC and crossfilter for visualisation of the data, the backend will run on a Flask framwork. it will also use a snapshot of data from a MongoDB database.
 The graphs will allow the users to view detailed info on both companies and planets and about what minerals they own/sell. These pages will implement a feature to switch on-page between individual planets data for quick browsing between them. The front page will feature graphs which cover more broad data about the subject and make more use of crossfilter and DC to allow users to see how the different data relates.
 
 ## Tech Used

@@ -27,7 +27,7 @@ The graphs will allow the users to view detailed info on both companies and plan
   - **JQuery** is used for extra front-end functionality.
 - [D3](https://d3js.org/)
   - **D3** is used to along with other graphic libraries to visualise the data.
-- [Crosffilter](https://github.com/square/crossfilter)
+- [Crossfilter](https://github.com/square/crossfilter)
   - **Crossfilter** is used to refine the data for use in our D3 and DC graphs.
 - [DC](https://dc-js.github.io/dc.js/)
     - **DC** is used to extend my graph's functionality and improve user experience.

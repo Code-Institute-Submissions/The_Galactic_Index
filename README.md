@@ -57,7 +57,7 @@ Now everything should be working correctly you can use the play button at the to
 Just choose myrouting.py from the dropdown and click the http link in the console window when the server has loaded.
 
 ## My Deployment
-After signing up to heroku [Heroku](https://signup.heroku.com/) and [insalling](https://devcenter.heroku.com/articles/heroku-cli) it I created a new Heroku app from the Heroku dashboard.
+After signing up to [Heroku](https://signup.heroku.com/) and [installing](https://devcenter.heroku.com/articles/heroku-cli) it I created a new Heroku app from the Heroku dashboard.
 
 I Then installed gunicorn from using the Project settigns in Pycharms, but could also install to the command line using:
 ```

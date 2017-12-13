@@ -18,6 +18,16 @@ This site will allow people to view data on individual planets, their names, cli
 The front end of the site will make extensive use of D3, DC and crossfilter for visualisation of the data, the backend will run on a Flask framwork. it will also use a snapshot of data from a MongoDB database.
 The graphs will allow the users to view detailed info on both companies and planets and about what minerals they own/sell. These pages will implement a feature to switch on-page between individual planets data for quick browsing between them. The front page will feature graphs which cover more broad data about the subject and make more use of crossfilter and DC to allow users to see how the different data relates.
 
+### Design Choices
+
+For this project i was interested in creating my own dataset for the project that would create quite a few different statistics to measure. I created a Python Project that Uploaded data to a mongoDB database, which can be found [here](https://github.com/kaiforward/GalacticIndex). It's a simulation of planets and companies interacting by buying and selling minerals from each other and all the data associated with them.
+
+To show all this data i knew i wanted to make use of crossfilter and DC for some of the broader data. It would allow the user to crossfilter data on planets and companies, comparing data between the individuals in each.
+
+To show data for individual planets and companies, i decided to dedicate the full page to graphs and information on one company/planet and allow the user the switch between them on-page, which would let them see new information much more quickly. As there is a lot of data that needed to be shown this was the best approach i could think of.
+
+I had lots of issues designing the UI for this as it was hard to have the graphs resizable for different screen sizes.
+
 ## Tech Used
 
 ### Some the tech used includes:
@@ -59,7 +69,7 @@ Just choose myrouting.py from the dropdown and click the http link in the consol
 ## My Deployment
 After signing up to [Heroku](https://signup.heroku.com/) and [installing](https://devcenter.heroku.com/articles/heroku-cli) it I created a new Heroku app from the Heroku dashboard.
 
-I Then installed gunicorn from using the Project settigns in Pycharms, but could also install to the command line using:
+I Then installed gunicorn using the Project settigns in Pycharms, but could also install to the command line using:
 ```
 pip install gunicorn
 ```

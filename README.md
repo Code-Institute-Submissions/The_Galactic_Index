@@ -85,7 +85,7 @@ To test the server locally after these changes use, for windows:
 ```
 heroku local -f Procfile.windows
 ```
-other
+On Mac/Linux
 ```
 heroku local
 ```

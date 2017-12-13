@@ -18,6 +18,7 @@ The graphs will allow the users to view detailed info on both companies and plan
 ### Design Choices
 
 For this project i was interested in creating my own dataset for the project that would create quite a few different statistics to measure. I created a Python Project that Uploaded data to a mongoDB database, which can be found [here](https://github.com/kaiforward/GalacticIndex). It's a simulation of planets and companies interacting by buying and selling minerals from each other and all the data associated with them.
+I was interested in trying MongoDb to see how it worked differently than MySQL, i found it was difficult to access the data from the simulation which was heavily nested, but managed to find a good working solution.
 
 To show all this data i knew i wanted to make use of crossfilter and DC for some of the broader data. It would allow the user to crossfilter data on planets and companies, comparing data between the individuals in each.
 

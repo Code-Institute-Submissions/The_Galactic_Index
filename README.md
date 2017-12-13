@@ -135,5 +135,5 @@ or can be opened through the heroku dashboard.
 
 ### References
 
-Lot's of the code was influenced by learning on the LMS as well as asking questions or solutions to them found on stack overflow and it was a great help in completing this project.
+Lot's of the code was influenced by learning on the LMS as well as asking questions or finding solutions to them found on stack overflow and it was a great help in completing this project.
 

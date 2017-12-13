@@ -1,7 +1,4 @@
-# The_Galactic_Index
-Visualisation of fictional trade data
-
-# Galactic Index (planetary trade simulation)
+# Galactic Index (planetary trade simulation data)
 
 ## Overview
 

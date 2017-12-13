@@ -26,6 +26,11 @@ To show data for individual planets and companies, i decided to dedicate the ful
 
 I had lots of issues designing the UI for this as it was hard to have the graphs resizable for different screen sizes.
 
+### Existing Features
+- Homepage that lets users crossfilter and view data about companies and planets.
+- Planets Page that lets users view and interact with more detailed information about planets.
+- Company Page that lets users view and interact with more detailed information about companies.
+
 ## Tech Used
 
 ### Some the tech used includes:

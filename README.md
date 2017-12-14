@@ -137,3 +137,10 @@ or can be opened through the heroku dashboard.
 
 Lot's of the code was influenced by learning on the LMS as well as asking questions or finding solutions to them found on stack overflow and it was a great help in completing this project.
 
+### Issues and testing
+
+So the main issues I faced when doing this project was overcoming the learning curve of crossfilter, DC and D3. The site still has styling issues caused by misunderstanding of the different values associated with the different graphs. I also had a lot fo trouble styling the site because of the graphs static nature, having them be resizable would have helped a lot during the process of making the site and i wish i could have spent more time on perfecting it. 
+
+I found that cases where I tried to use the graphs differently that the standard, it was hard to modify them to suit the exact needs that I had and perhaps in future would have found it more useful to look more closely at D3 instead of DC. As a user i would prefer clear, readable graphs rather than quite buggy responsive ones. Without fully understanding the way DC works it is definitely hard to get the best out of it.
+
+
